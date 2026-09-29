@@ -2,9 +2,11 @@
 
 ![Awesome Calendar Banner](./assets/banner.svg)
 
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Calendar/pulls)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 > **Curated List of Calendar Software, Scheduling Platforms, CalDAV Sync Tools, and Self-Hosted Open-Source GitHub Projects**  
 > *Focused on Appointment Scheduling, CalDAV/CardDAV Syncing, Team Availability, and Personal Information Management (PIM).*
@@ -24,6 +26,8 @@
 - [🏢 SaaS & Hosted Platforms](#-saas--hosted-platforms)
 - [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
 - [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
 
 ---
@@ -92,6 +96,22 @@ Below is a list of top open-source calendar tools, CalDAV servers, mobile apps, 
 3. Ensure open-source projects include star badges linking to their `stargazers` page (`https://github.com/user/repo/stargazers`).
 4. Keep entries concise, factual, and strictly accurate.
 5. Open a **Pull Request** with your changes!
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you for exploring **Awesome-Calendar**! If you find this curated list helpful for your personal setup, business, or development workflow, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork and share** it with your developer and self-hosting networks.
+- ☕ **Sponsor the author:** Buy me a coffee or support ongoing maintenance via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Calendar&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Calendar&type=date&legend=top-left)
 
 ---
 
