@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- Glassmorphism Filter -->
+    <filter id="glass" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" />
+    </filter>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+
+    <!-- Glowing Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .title {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 54px;
+      fill: #ffffff;
+    }
+    .subtitle {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      fill: #93c5fd;
+    }
+    .tag {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      fill: #e0f2fe;
+    }
+    
+    /* Subtle SVG CSS Keyframe Animations for dynamic aspect */
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.4; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.05); }
+    }
+    @keyframes floatCard {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes floatCardOpposite {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(8px); }
+    }
+
+    .bg-circle-1 { animation: pulseGlow 6s ease-in-out infinite; transform-origin: 200px 100px; }
+    .bg-circle-2 { animation: pulseGlow 8s ease-in-out infinite 1s; transform-origin: 1000px 300px; }
+    .card-left { animation: floatCard 5s ease-in-out infinite; }
+    .card-right { animation: floatCardOpposite 6s ease-in-out infinite 0.5s; }
+  </style>
+
+  <!-- Base Canvas Background -->
+  <rect width="1200" height="400" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Dynamic Animated Background Elements (Behind Everything) -->
+  <circle class="bg-circle-1" cx="150" cy="80" r="180" fill="#38bdf8" opacity="0.25" filter="url(#glass)" />
+  <circle class="bg-circle-2" cx="1050" cy="320" r="220" fill="#818cf8" opacity="0.2" filter="url(#glass)" />
+  <path d="M-50,300 Q200,150 500,280 T1100,180 T1250,350" fill="none" stroke="url(#accentGrad)" stroke-width="2" opacity="0.3" />
+
+  <!-- Foreground Title and Subtitle Container -->
+  <g transform="translate(80, 140)">
+    <!-- Header Badge -->
+    <g transform="translate(0, 0)">
+      <rect width="260" height="34" rx="17" fill="#1e293b" opacity="0.8" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="130" y="22" text-anchor="middle" class="tag">📅 AWESOME CALENDAR</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="90" class="title">Awesome Calendar &amp; Scheduling</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="130" class="subtitle">A Curated Ecosystem of SaaS Platforms &amp; Open-Source CalDAV Solutions</text>
+  </g>
+
+  <!-- Decorative Floating Mini Card Left (Dynamic Aspect) -->
+  <g class="card-left" transform="translate(850, 70)" filter="url(#dropShadow)">
+    <rect width="260" height="110" rx="14" fill="#0f172a" opacity="0.85" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="35" cy="35" r="14" fill="#0284c7" />
+    <text x="35" y="40" font-family="sans-serif" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">📆</text>
+    <text x="65" y="32" font-family="sans-serif" font-size="14" fill="#ffffff" font-weight="bold">CalDAV Sync</text>
+    <text x="65" y="50" font-family="sans-serif" font-size="12" fill="#94a3b8">Radicale &amp; Baïkal</text>
+    <rect x="20" y="75" width="220" height="8" rx="4" fill="#334155" />
+    <rect x="20" y="75" width="160" height="8" rx="4" fill="#38bdf8" />
+  </g>
+
+  <!-- Decorative Floating Mini Card Right (Dynamic Aspect) -->
+  <g class="card-right" transform="translate(810, 210)" filter="url(#dropShadow)">
+    <rect width="280" height="120" rx="14" fill="#0f172a" opacity="0.85" stroke="#818cf8" stroke-width="1" />
+    <circle cx="35" cy="35" r="14" fill="#6366f1" />
+    <text x="35" y="40" font-family="sans-serif" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">⚡</text>
+    <text x="65" y="32" font-family="sans-serif" font-size="14" fill="#ffffff" font-weight="bold">Top Open Source</text>
+    <text x="65" y="50" font-family="sans-serif" font-size="12" fill="#94a3b8">Cal.com &amp; Rallly</text>
+    
+    <!-- Mini Graph lines inside card -->
+    <path d="M25,95 L70,80 L120,88 L170,70 L220,75 L255,60" fill="none" stroke="#818cf8" stroke-width="2.5" />
+    <circle cx="255" cy="60" r="4" fill="#c084fc" />
+  </g>
+</svg>
