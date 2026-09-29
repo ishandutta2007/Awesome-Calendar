@@ -52,7 +52,7 @@ The table below outlines the top hosted and SaaS calendar solutions, sorted by *
 
 ## 🔓 Open-Source GitHub Projects
 
-Below is a list of top open-source calendar tools, CalDAV servers, mobile apps, and group meeting schedulers, sorted by **GitHub Star Count** in descending order:
+Below is a list of top open-source calendar tools, CalDAV servers, mobile apps, and group meeting schedulers, sorted by **GitHub Stars_Count** in descending order:
 
 | ⭐ Repository & Stars | 🛠️ Category & Description | ⚖️ License |
 | :--- | :--- | :--- |
@@ -93,7 +93,7 @@ Below is a list of top open-source calendar tools, CalDAV servers, mobile apps, 
 
 1. **Fork** this repository.
 2. Add your tool under either **SaaS & Hosted Platforms** or **Open-Source GitHub Projects**.
-3. Ensure open-source projects include star badges linking to their `stargazers` page (`https://github.com/user/repo/stargazers`).
+3. Ensure open-source projects include Stars_Badges linking to their `stargazers` page (`https://github.com/user/repo/stargazers`).
 4. Keep entries concise, factual, and strictly accurate.
 5. Open a **Pull Request** with your changes!
 
